@@ -41,6 +41,10 @@ ul {
     color: var(--primary-color);
 }
 
+.mobile-only {
+    display: none !important;
+}
+
 .section {
     min-height: 100vh;
     padding: 100px 10%;
@@ -508,6 +512,10 @@ ul {
         padding: 80px 5%;
     }
     
+    .navbar {
+        padding: 20px 5%;
+    }
+    
     .hero-content, .about-container, .skills-container, .contact-container {
         flex-direction: column;
         gap: 3rem;
@@ -526,8 +534,14 @@ ul {
         justify-content: center;
     }
     
-    .about-image {
-        order: -1;
+    .desktop-only {
+        display: none !important;
+    }
+    
+    .mobile-only {
+        display: flex !important;
+        justify-content: center;
+        margin: 2rem 0;
     }
 }
 
